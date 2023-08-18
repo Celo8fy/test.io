@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarToon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/WarToon.png">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cairo">
+
+</head>
+<body>
+    <section class="container" dir="ltr">
+        <header>
+            <ul class="nav-bar">
+                <li><a href="#">تواصل معنا</a></li>
+                <li><a href="#">الأخبار</a></li>
+                <li><a href="#">قائمة االكرتون</a></li>
+                <li><a href="#">الصفحة الرئيسية</a></li>
+            </ul>
+            <div class="logo">
+                 <a href="#"><img src="imgs/WarToon.png" alt=""></a>
+            </div>
+            
+        </header>
+    </div>
+        <center>
+            <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+ 
+
+            <div class="slide first">
+                <a href="#"><img src="imgs/1.png" alt="اعد التحميل"></a>
+            </div>
+            <div class="slide">
+                <a href="#"><img src="imgs/2.jpg" alt="اعد التحميل"></a>
+            </div>
+            <div class="slide"><a href="#">
+            <img src="imgs/3.png" alt="اعد التحميل"></a>
+            </div>
+            <div class="slide"><a href="#">
+            <img src="imgs/4.jpg" alt="اعد التحميل"></a>
+            </div>
+            <div class="screen"></div>
+            <div class="logo2"><a href="#"><img src="imgs/WarToon.png" alt="">
+            ...<span>وارتون</span> يرحب بكم</a></div>
+            
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+ 
+            </div>
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+
+          </div>
+       </div>
+    </div>
+    </center>
+    </section>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+
+            }
+
+
+        }, 5000);
+        
+        
+
+    </script>
+</body>
+</html>
